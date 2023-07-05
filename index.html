@@ -489,7 +489,7 @@
           </p>
         </div>
         <div class="footer-socials">
-          <p class="section-subtitle">Social media</p>
+          <h3 class="section-subtitle">Social media</h3>
           <ul class="socials-list footer-socials list">
             <li class="socials-item">
               <a
@@ -545,6 +545,26 @@
             </li>
           </ul>
         </div>
+
+        <!-- Subscribe -->
+        <div class="footer-form">
+          <form name="subscribe_form">
+            <h3 class="subscribe-subtitle">Subscribe</h3>
+            <label for="footer-email" class="subscribe-label"></label>
+            <input
+              id="footer-email"
+              type="text"
+              class="subscribe-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -561,6 +581,68 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <!-- Modal form -->
+        <form class="modal-form" name="register_form">
+          <p class="modal-caption section-subtitle">
+            Leave your contacts and we will call you back
+          </p>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label for="name" class="modal-label">Name</label>
+              <div class="modal-form-field">
+                <input id="name" type="text" class="modal-input" />
+                <svg class="register-modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#person"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="modal-item">
+              <label for="phone" class="modal-label">Phone</label>
+              <div class="modal-form-field">
+                <input id="phone" type="tel" class="modal-input" />
+                <svg class="register-modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="modal-item">
+              <label for="email" class="modal-label">Email</label>
+              <div class="modal-form-field">
+                <input id="email" type="email" class="modal-input" />
+                <svg class="register-modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="modal-item">
+              <label for="comment" class="modal-label">Comment</label>
+              <input
+                id="comment"
+                type="text"
+                class="modal-input modal-comment"
+                placeholder="Text input"
+              />
+            </li>
+          </ul>
+          <!-- Checkbox -->
+          <label
+            class="modal-form-agreement"
+            type="checkbox"
+            name="user_agreement"
+            for=""
+          >
+            <input class="modal-form-agreement-checkbox" type="checkbox" />
+            <span class="modal-form-agreement-desc">
+              I accept the terms and conditions of the
+              <a class="modal-form-agreement-link" href="#">Privacy Policy</a>
+            </span>
+          </label>
+
+          <button type="submit" class="modal-send">Send</button>
+        </form>
       </div>
     </div>
 
