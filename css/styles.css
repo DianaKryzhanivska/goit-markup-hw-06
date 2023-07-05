@@ -323,7 +323,7 @@ img {
   width: 264px;
   height: 40px;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   border-radius: 4px;
