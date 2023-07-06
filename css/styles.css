@@ -211,11 +211,6 @@ img {
 /* FOOTER */
 
 .footer {
-  display: flex;
-  gap: 120px;
-
-  padding-left: 156px;
-  padding-right: 159px;
   padding-top: 100px;
   padding-bottom: 100px;
   color: #f4f4fd;
@@ -223,8 +218,7 @@ img {
 }
 
 .footer-container {
-  box-sizing: content-box;
-  width: 264px;
+  box-sizing: border-box;
   margin-right: 120px;
 }
 
@@ -286,9 +280,19 @@ img {
   color: #f4f4fd;
 }
 
+.footer-block {
+  margin-left: 80px;
+}
+
 .footer-form {
   display: flex;
-  margin-left: 80px;
+  gap: 24px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .subscribe-subtitle {
@@ -325,12 +329,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
   min-width: 165px;
   height: 40px;
-  padding: 8px 24px;
-  margin: auto;
 
   border: none;
   border-radius: 4px;
@@ -887,7 +888,8 @@ img {
   border-color: var(--brand-color);
 }
 
-.modal-input:focus + .register-modal-icon {
+.modal-input:focus + .register-modal-icon,
+.modal-input:hover + .register-modal-icon {
   fill: var(--brand-color, #4d5ae5);
 }
 
